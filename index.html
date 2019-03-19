@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Google Search Bar Component</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <style>
+      #component {
+        border-radius: 24px;
+        border: 1px solid #dfe1e5;
+        height: 44px;
+        width: 482px;
+        display: flex;
+      }
+      #component:hover {
+        box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28)
+      }
+      #component > div.input-container {
+        flex: 1;
+        display: flex;
+        padding: 5px 4px 0 16px;
+        padding-left: 20px;
+      }
+      #component > div.input-container > input {
+        border: none;
+        outline: none;
+        font-size: 16px;
+        height: 34px;
+        flex: 100%;
+      }
+      #component > button {
+        background: transparent;
+        border-radius: 0 8px 8px 0;
+        outline: none;
+        flex: 0 0 auto;
+        padding-right: 13px;
+        color: #4285f4;
+        border: none;
+      }
+    </style>
+    <div id="component">
+      <div class="input-container">
+        <input></input>
+      </div>
+      <button>
+        <i class="material-icons">search</i>
+      </button>
+    </div>
+  </body>
+</html>
